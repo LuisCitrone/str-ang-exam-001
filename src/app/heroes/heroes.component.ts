@@ -9,6 +9,8 @@ import { HeroService } from '../service/hero.service';
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = this.hService.getAll();
+  phrase: string = "";
+  key: string = 'name';
   constructor(private hService: HeroService) { }
 
   ngOnInit(): void {
